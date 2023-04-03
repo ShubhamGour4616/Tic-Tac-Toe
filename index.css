@@ -1,0 +1,111 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: rgb(60, 56, 56);
+}
+
+.flex{
+    display:flex;
+}
+
+.details{
+    width: 40vw;
+    height: 65px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(138, 135, 135);
+    margin: auto;
+    margin-top: 40px;
+}
+#btn{
+   padding-inline: 20px;
+   border-radius: 12px;
+   font-size: 20px;
+   margin: 10px;
+   border: none;
+   background-color: rgb(52, 35, 169);
+   color: white;
+}
+#wingame{
+     margin: 10px;
+     color: rgb(34, 16, 154);
+     margin-left: 25px;
+    
+}
+.gameContainer{
+    width:400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* justify-content: center; */
+    /* text-align: center; */
+    font-size: 7rem;
+    text-align: center;
+}
+
+.cell{
+border: 2px solid black;
+
+}
+
+.b-top{
+    border-top:0;
+}
+.b-rig{
+    border-right: 0;
+}
+.b-bot{
+    border-bottom: 0;
+}
+.b-left{
+    border-left: 0;
+}
+
+
+
+.disable{
+    pointer-events: none;
+}
+.fillColor{
+   
+    background-color: rgb(133, 120, 212);
+    color: black;
+}
+
+@media  screen and (max-width: 1030px) {
+    
+    .details{
+      min-width: 410px;
+    }
+
+}
+@media  screen and (max-width: 450px) {
+    
+    .details{
+      min-width: 370px;
+    }
+    .gameContainer{
+        width: 350px;
+        height: 350px;
+        font-size: 6rem;
+    }
+
+}
+@media  screen and (max-width: 390px) {
+    
+    .details{
+      min-width: 340px;
+    }
+    .gameContainer{
+        width: 320px;
+        height: 320px;
+        font-size: 5.6rem;
+    }
+
+}
+
